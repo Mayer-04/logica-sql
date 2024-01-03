@@ -1,13 +1,14 @@
---  Creando un indice simple
-CREATE INDEX nombre_producto ON products (product_name);
+--  Creando un índice simple en la tabla "products" con el campo "product_name".
+CREATE INDEX idx_product ON products (product_name);
 
--- Creando un indice unico.
-CREATE UNIQUE INDEX nombre_completo ON customers (first_name, last_name);
+-- Creando un índice unico.
+CREATE UNIQUE INDEX idx_customer ON customers (first_name);
 
--- Creando un indice compuesto
-CREATE INDEX nombre_completo ON customers (first_name, last_name);
+/* Creando un índice compuesto llamado "idx_first_name_last_name" en la tabla "customers" 
+ asociado a los campos "first_name" y "last_name" */
+CREATE INDEX idx_first_name_last_name ON customers (first_name, last_name);
 
--- Creando un indice compuesto con una condicion
-CREATE INDEX nombre_completo ON customers
+-- Creando un índice llamado "idx_customer" en la tabla "customers" con una condición.
+CREATE INDEX idx_customer ON customers
 WHERE
     first_name = 'John';
