@@ -57,3 +57,9 @@ CREATE TABLE inscripciones (
     FOREIGN KEY (id_estudiante) REFERENCES estudiantes(id_estudiante),
     FOREIGN KEY (id_curso) REFERENCES cursos(id_curso)
 );
+
+-- Añadir campo "telefono" a la tabla "personas" con un constraint
+ALTER TABLE
+    personas
+ADD
+    CONSTRAINT fk_telefono FOREIGN KEY(id_persona) REFERENCES personas(id_persona);
