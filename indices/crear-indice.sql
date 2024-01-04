@@ -12,3 +12,9 @@ CREATE INDEX idx_first_name_last_name ON customers (first_name, last_name);
 CREATE INDEX idx_customer ON customers
 WHERE
     first_name = 'John';
+
+-- Crear un índice de la tabla "users" con el campo "email"
+ALTER TABLE
+    Usuarios
+ADD
+    INDEX idx_usuarios_email (Email);
