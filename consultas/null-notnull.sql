@@ -14,7 +14,7 @@ FROM
 WHERE
     email IS NOT NULL;
 
--- Recuperar todos los registros de la tabla "clientes" de la tabla " email no nulo y nombre igual a "Andres"
+-- Recuperar todos los registros de la tabla "clientes" filtrando por "email no nulo" y nombre igual a "Andres"
 SELECT
     *
 FROM
