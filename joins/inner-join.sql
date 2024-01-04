@@ -21,3 +21,13 @@ FROM
     INNER JOIN orders ON customers.id = orders.id
 WHERE
     customers.id = 1;
+
+-- TODO: Ejemplo 2 con alias de INNER JOIN 
+SELECT
+    a.name AS country,
+    c.name AS continent
+FROM
+    country a
+    INNER JOIN continent c ON a.continent = c.code
+ORDER BY
+    country ASC;
