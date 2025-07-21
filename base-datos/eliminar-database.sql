@@ -1,2 +1,2 @@
--- Eliminar base de datos - Nombre base de datos = Ejemplo.
+-- Eliminar la base de datos llamada "ejemplo"
 DROP DATABASE ejemplo;

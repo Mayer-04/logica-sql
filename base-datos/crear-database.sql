@@ -1,5 +1,5 @@
--- Crear una base de datos con el nombre de ejemplo
+-- Crear una base de datos llamada "ejemplo"
 CREATE DATABASE ejemplo;
 
--- Crear una base de datos con dueño o propietario Mayer
-CREATE DATABASE ejemplo WITH owner Mayer;
+-- Crear una base de datos llamada "ejemplo" con el usuario "Mayer" como propietario
+CREATE DATABASE ejemplo WITH OWNER = Mayer;
