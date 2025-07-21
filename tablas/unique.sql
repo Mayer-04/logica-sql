@@ -1,18 +1,18 @@
--- Establecer UNIQUE a una columna de una tabla
+-- Crear una tabla con restricción UNIQUE en la columna "email"
 CREATE TABLE ejemplo (
-    id INT NOT NULL AUTO_INCREMENT,
+    id SERIAL PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
-    email VARCHAR(50) UNIQUE,
+    email VARCHAR(50) UNIQUE
 );
 
--- Alterar UNIQUE a una columna de una tabla
-ALTER TABLE
-    ejemplo
-MODIFY
-    COLUMN name VARCHAR(50) UNIQUE;
-
---  Añadir UNIQUE a una tabla
+-- Añadir una restricción UNIQUE a la columna "name"
 ALTER TABLE
     ejemplo
 ADD
-    UNIQUE (ropa);
+    CONSTRAINT unique_name UNIQUE (name);
+
+-- Añadir restricción UNIQUE a la columna "ropa"
+ALTER TABLE
+    ejemplo
+ADD
+    CONSTRAINT unique_ropa UNIQUE (ropa);

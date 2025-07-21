@@ -1,4 +1,4 @@
--- Devolverá la longitud (número de caracteres) de cada "nombre" de la tabla "productos".
+-- Mostrar el ID, nombre del producto y la cantidad de caracteres de cada nombre
 SELECT
     id,
     nombre,

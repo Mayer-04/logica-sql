@@ -1,5 +1,5 @@
--- Convierte una cadena de caracteres a mayúsculas
+-- Convertir todos los nombres de los clientes a mayúsculas
 SELECT
-    UPPER(name)
+    UPPER(name) AS nombre_mayuscula
 FROM
     clientes;

@@ -1,5 +1,5 @@
-/* Divide la cadena en partes.
- Suponiendo que el nombre sigue un formato como "Marca Modelo", esto extraerá la marca de cada producto. */
+-- Separar el contenido de la columna "nombre" por espacios
+-- Devuelve la primera palabra (antes del primer espacio), que puede representar la marca del producto
 SELECT
     id,
     nombre,

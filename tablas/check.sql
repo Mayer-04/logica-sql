@@ -1,16 +1,16 @@
--- Aplicar restricciones o condiciones a los valores que se insertan en la tablas
+-- Crear tabla "persona" con una restricción CHECK en la columna "edad"
 CREATE TABLE persona (
-    id serial PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     nombre VARCHAR(100),
-    edad INTEGER CHECK (edad >= 18)
+    edad INTEGER CHECK (edad >= 18) -- Solo se permiten mayores de edad
 );
 
--- Multiples restricciones 
+-- Crear tabla "programador" con múltiples restricciones CHECK
 CREATE TABLE programador (
-    id serial PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     salario NUMERIC,
     categoria VARCHAR(50) CHECK (categoria IN ('Junior', 'Mid', 'Senior')),
-    -- *  CONSTRAINT para multiples restricciones que involucren multiples columnas "salario" y "categoria"
+    -- Restricción CHECK compuesta que valida "salario" según la "categoria"
     CONSTRAINT salario_categoria_check CHECK (
         (
             categoria = 'Junior'
@@ -29,7 +29,7 @@ CREATE TABLE programador (
     )
 );
 
--- Agregar una restricción CHECK después de la creación de la tabla.
+-- Agregar una restricción CHECK a una tabla ya creada ("cliente")
 ALTER TABLE
     cliente
 ADD

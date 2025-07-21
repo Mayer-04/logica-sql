@@ -22,7 +22,7 @@ FROM
 WHERE
     nombre LIKE '%a';
 
---  Recuperar los nombres de los clientes que contienen la letra 'a' en cualquier lugar.
+--  Recuperar los nombres de los clientes que contienen la letra 'a' en cualquier posición.
 SELECT
     nombre
 FROM

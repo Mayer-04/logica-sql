@@ -1,10 +1,10 @@
--- Sumar todos los valores de una columna
+-- Calcular la suma total de la columna "cuenta" (total de compras, ingresos, etc.)
 SELECT
     SUM(cuenta) AS suma_cuenta
 FROM
     clientes;
 
--- Sumar los valores de una columna, excluyendo los valores nulos
+-- Hacer lo mismo, pero asegurándose de ignorar los valores NULL
 SELECT
     SUM(cuenta) AS suma_cuenta
 FROM

@@ -1,4 +1,4 @@
--- Recuperar los primeros 10 registros de la tabla "users";
+-- Recuperar los primeros 10 registros
 SELECT
     *
 FROM
@@ -6,16 +6,19 @@ FROM
 LIMIT
     10;
 
--- Omitir los primeros 10 registros de la tabla "users";
+-- Saltar los primeros 10 registros y mostrar el resto
 SELECT
     *
 FROM
     users OFFSET 10;
 
--- Recuperar los primeros 10 registros de la tabla "users" y omitir los primeros 10 registros de la tabla "users";
+-- Mostrar 10 registros, comenzando desde el undécimo
 SELECT
     *
 FROM
     users
 LIMIT
     10 OFFSET 10;
+
+
+-- NOTE: Útil para paginación.

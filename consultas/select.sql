@@ -1,18 +1,20 @@
--- Recuperar todos los registros de la tabla "clientes"
+-- Recuperar todos los campos de la tabla "clientes"
 SELECT
     *
 FROM
     clientes;
 
--- Recuperar el campos "id" de la tabla "clientes"
+-- Recuperar solo el campo "id"
 SELECT
     id
 FROM
     clientes;
 
--- Recuperar multiples campos
+-- Recuperar varios campos: "id" y "nombre"
 SELECT
     id,
     nombre
 FROM
     clientes;
+
+-- NOTE: Evita SELECT * en producción; es mejor especificar columnas.

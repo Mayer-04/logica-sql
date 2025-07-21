@@ -1,4 +1,4 @@
--- Recuperar todos los registros de la tabla "clientes" con email nulo
+-- Filtrar clientes cuyo email sea nulo
 SELECT
     *
 FROM
@@ -6,7 +6,7 @@ FROM
 WHERE
     email IS NULL;
 
--- Recuperar todos los registros de la tabla "clientes" con email no nulo
+-- Filtrar clientes cuyo email NO sea nulo
 SELECT
     *
 FROM
@@ -14,7 +14,7 @@ FROM
 WHERE
     email IS NOT NULL;
 
--- Recuperar todos los registros de la tabla "clientes" filtrando por "email no nulo" y nombre igual a "Andres"
+-- Filtrar clientes con email no nulo y nombre igual a 'Andres'
 SELECT
     *
 FROM

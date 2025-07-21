@@ -1,9 +1,9 @@
--- Crear un nuevo esquema con el nombre "private"
+-- Crear un nuevo esquema llamado "reserved"
 CREATE SCHEMA reserved;
 
--- Crear una Table "ejemplo" dentro del esquema "reserved"
+-- Crear una tabla llamada "ejemplo" dentro del esquema "reserved"
 CREATE TABLE reserved.ejemplo (
-    -- Identificar unico ( PostgreSQL )
+    -- Identificador único con tipo UUID como clave primaria
     id UUID PRIMARY KEY,
     name TEXT
 );

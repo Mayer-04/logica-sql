@@ -1,4 +1,4 @@
--- Obtener la suma de la cantidad vendida por categoría
+-- Obtener la suma de la cantidad vendida agrupada por categoría
 SELECT
     categoria,
     SUM(cantidad_vendida) AS total_cantidad
@@ -7,7 +7,7 @@ FROM
 GROUP BY
     categoria;
 
--- Contar cuentas veces el total de ventas por cliente
+-- Contar cuántas ventas ha hecho cada cliente
 SELECT
     id_cliente,
     COUNT(id_venta) AS num_ventas

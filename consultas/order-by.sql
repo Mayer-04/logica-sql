@@ -1,4 +1,4 @@
--- Ordena todos los registros de la tabla "users" por edad.Por defecto su valor es ASC.
+-- Ordenar usuarios por edad en orden ascendente (ASC es implícito)
 SELECT
     *
 FROM
@@ -6,7 +6,7 @@ FROM
 ORDER BY
     age;
 
--- Ordenar multiples registros de la tabla "clientes" por nombre y edad".
+-- Ordenar clientes primero por nombre (A-Z) y luego por edad descendente
 SELECT
     name,
     age

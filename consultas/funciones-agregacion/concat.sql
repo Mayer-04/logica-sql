@@ -1,7 +1,6 @@
-/* Une una cadena de caracteres con el valor de una columna.
- Esto concatenará la etiqueta "Precio: $" con el valor del precio. */
+-- Mostrar el ID y una etiqueta que combine el texto "Precio: $" con el valor del precio del producto
 SELECT
     id,
-    CONCAT('Precio: $', precio) AS etiqueta_precio
+    CONCAT('Precio: $', precio)
 FROM
     productos;

@@ -1,11 +1,11 @@
--- Obtener el valor minimo de una columna
+-- Obtener el valor mínimo de la columna "age"
 SELECT
-    MIN(age)
+    MIN(age) AS edad_minima
 FROM
     clientes;
 
--- Obtener el valor maximo de una columna
+-- Obtener el valor máximo de la columna "age"
 SELECT
-    MAX(age)
+    MAX(age) AS edad_maxima
 FROM
     clientes;

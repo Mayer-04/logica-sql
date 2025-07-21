@@ -1,6 +1,6 @@
--- Remueve los espacios del principio y final de una cadena de caracteres
+-- Quitar los espacios en blanco al inicio y final del nombre del producto
 SELECT
     id,
-    TRIM(nombre) AS sin_espacios
+    TRIM(nombre) AS nombre_limpio
 FROM
     productos;

@@ -1,4 +1,4 @@
--- Actualizar registro de una tabla
+-- Actualizar el campo "name" del usuario con ID = 1
 UPDATE
     Users
 SET
@@ -6,7 +6,7 @@ SET
 WHERE
     id = 1;
 
--- Actualizar multiples registros
+-- Actualizar múltiples campos ("name" y "lastname") del usuario con ID = 1
 UPDATE
     Users
 SET

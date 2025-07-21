@@ -1,4 +1,4 @@
---  Tablas 
+-- * Creando dos tablas para el ejemplo
 CREATE TABLE employees (
     employee_id SERIAL PRIMARY KEY,
     employee_name VARCHAR(50),
@@ -11,7 +11,7 @@ CREATE TABLE users (
     active BOOLEAN
 );
 
--- * Unión o combinación de dos tablas con columna "id" y "nombre"
+-- Unir empleados y usuarios (los nombres de columnas deben coincidir en número y tipo)
 SELECT
     employee_id,
     employee_name
@@ -24,7 +24,7 @@ SELECT
 FROM
     users;
 
--- * Combina dos tablas y filtra los resultados
+-- Combinar resultados filtrando: empleados mayores de edad y usuarios activos
 SELECT
     employee_id,
     employee_name
@@ -41,7 +41,7 @@ FROM
 WHERE
     active = TRUE;
 
--- * Combina dos tablas con filas duplicadas (UNION ALL)
+-- UNION ALL: incluye duplicados
 SELECT
     employee_id,
     employee_name
@@ -54,3 +54,5 @@ SELECT
     username
 FROM
     users;
+
+-- NOTE: Las columnas deben coincidir en tipo y cantidad en UNION.

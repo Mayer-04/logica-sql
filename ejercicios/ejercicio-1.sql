@@ -3,10 +3,10 @@
  Crea una nueva base de datos llamada "tienda".
  Dentro de la base de datos "tienda", crea una tabla llamada "productos" con las siguientes columnas:
  
- id (entero, clave primaria)
- nombre (cadena de texto)
- precio (decimal)
- stock (entero)
+ - id (entero, clave primaria)
+ - nombre (cadena de texto)
+ - precio (decimal)
+ - stock (entero)
  */
 -- Creando base de datos "tienda"
 CREATE DATABASE tienda;

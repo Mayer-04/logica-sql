@@ -1,4 +1,4 @@
--- Recuperar los datos de la tabla "clientes" especificando una condición.
+-- Filtrar clientes con precio mayor a 100
 SELECT
     *
 FROM
@@ -6,7 +6,7 @@ FROM
 WHERE
     precio > 100;
 
--- Recuperar los datos de la tabla "clientes" donde la edad sea mayor a 18 y la ciudad sea Bogotá. 
+-- Filtrar clientes mayores de 18 años y que vivan en Bogotá
 SELECT
     *
 FROM
@@ -15,7 +15,7 @@ WHERE
     edad > 18
     AND ciudad = 'Bogotá';
 
--- Recuperar los datos de la tabla "clientes" donde la categoria sea A o B.
+-- Filtrar por categoría A o B usando IN
 SELECT
     *
 FROM
@@ -23,10 +23,13 @@ FROM
 WHERE
     categoria IN ('A', 'B');
 
--- Recuperar los datos de la tabla "clientes" donde la longitud del nombre sea mayor a 5.
+-- Filtrar por longitud del nombre (mayor a 5 caracteres)
 SELECT
     *
 FROM
     clientes
 WHERE
     LENGTH(nombre) > 5;
+
+
+-- NOTE: Se pueden combinar WHERE, AND, OR, IN, y funciones como LENGTH.

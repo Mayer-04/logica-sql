@@ -1,4 +1,4 @@
--- Recuperar todos los registros de la tabla "clientes" con los valores 1, 2, 3, 4, 5
+-- Filtrar registros de clientes con ID en el conjunto {1, 2, 3, 4, 5}
 SELECT
     *
 FROM
@@ -6,7 +6,7 @@ FROM
 WHERE
     id IN (1, 2, 3, 4, 5);
 
--- Recuperar los nombres de los usuarios con los valores 'Lucas', 'Pedro', 'Maria'
+-- Filtrar usuarios cuyos nombres estén en la lista dada
 SELECT
     name
 FROM

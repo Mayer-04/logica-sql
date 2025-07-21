@@ -16,7 +16,7 @@ WHERE
     nombre BETWEEN 'Ana'
     AND 'Juan';
 
--- Obtener todos los registros que contengan en un rango de fechas el valor '2022-01-01' o '2022-12-31'
+-- Filtrar registros cuya fecha esté entre el 1 de enero y el 31 de diciembre de 2022
 SELECT
     *
 FROM

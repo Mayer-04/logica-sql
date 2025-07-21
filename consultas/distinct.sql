@@ -9,3 +9,5 @@ SELECT
     DISTINCT lastname
 FROM
     clientes
+
+-- NOTE: Lo más común es usar DISTINCT en columnas específicas, no con *
