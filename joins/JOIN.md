@@ -35,3 +35,7 @@ LEFT JOIN pedidos ON clientes.id = pedidos.cliente_id;
 Selecciona todas las columnas de las tablas clientes y pedidos.
 Muestra todos los clientes, aunque no tengan pedidos.
 Si un cliente no tiene coincidencias en pedidos, aparecerá igualmente, pero con valores nulos (NULL) en las columnas de pedidos.
+
+## RIGHT JOIN
+
+## CROSS JOIN
